@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>psdtowebviolationsar.psd</title>
+		<link href="styles/violation_style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+        <script src="js/cordova-2.5.0.js" type="text/javascript"></script>
+    <script src="js/Entities/Quries.js" type="text/javascript"></script>
+    <script src="js/database.js" type="text/javascript"></script>
+        <script src="js/gen_validatorv4.js" type="text/javascript"></script>
+        <script type="text/javascript" charset="utf-8">
+
+            // Wait for Cordova to load
+            //
+            //document.addEventListener("deviceready", onDeviceReady, false);
+            var watchID = null;
+            initDatabase();
+
+            $("#submitButton").click(insertRecord);
+            onDeviceReady();            
+
+            
+
+           // Register Event Listener when button click.
+
+         
+
+            // Cordova is ready
+            //
+            function onDeviceReady() {
+                // Throw an error if no update is received every 30 seconds
+                var options = { timeout: 30000 };
+                watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
+                 
+               
+            }
+
+            // onSuccess Geolocation
+            //
+            function onSuccess(position) {
+                var lang = document.getElementById('txt_lang');
+                var lat = document.getElementById('txt_Lat');
+                var length = 9;
+                lat.value = position.coords.latitude.toString().substring(0, length); ;
+                lang.value = position.coords.longitude.toString().substring(0, length); ;
+
+                // element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
+                //                     'Longitude: ' + position.coords.longitude     + '<br />' +
+                //                     '<hr />'      + element.innerHTML;
+            }
+
+            // onError Callback receives a PositionError object
+            //
+            function onError(error) {
+                alert('code: ' + error.code + '\n' +
+              'message: ' + error.message + '\n');
+            }
+
+    </script>
+	</head>
+	<body>
+		<div id="background">
+        <form id = "myForm" class=myForm action="javascript:insertRecord();">
+			<div id="mainlogo"><img src="images/mainlogo.png"></div>
+			<div id="heading"><img src="images/heading.png"></div>
+			<div id="checkboxes"><img src="images/checkboxes.png"></div>
+			<div id="submitbutton"><input  id="submitButton" type="image" src="images/submitbutton.png"/></div>
+			<div id="btnarabic"><img src="images/btnarabic.png"></div>
+			<div id="btnenglish"><img src="images/btnenglish.png"></div>
+			<div id="txtDetails">
+                <textarea id="txt_Details" class="textarea" cols="20" name="S1" rows="2"></textarea></div>
+			<div id="btnback"><a id="btnBack" href="index.html"><img src="images/btnback.png"></a></div>
+			<div id="txtSeverity">
+            <select id="tx_tSeverity">
+                  <option class=S_option value="000">[Select]</option>
+                  <option class=S_option value="Saudi">Saudi</option>
+                  <option class=S_option value="Pakistani">Pakistani</option>
+                  <option class=S_option value="Indian">Hindi</option>
+                  <option class=S_option value="Bangali">Bangali</option>
+              </select>     </div>      
+			<div id="txtLat">
+                <input id="txt_lang" class="textbox txtlat_lag" type="text" /></div>
+			<div id="txtLang">
+                <input id="txt_Lat" class="textbox txtlat_lag" type="text" /></div>
+			<div id="txtMobileNum">
+                <input id="txt_MobileNum" class="textbox" type="text" /></div>
+			<div id="txtName">
+                <input id="txt_Name" class="textbox" type="text" /></div>
+		</form>
+        <script  type="text/javascript">
+            var frmvalidator = new Validator("myForm");
+            /*frmvalidator.addValidation("txt_Name", "req", "Please enter your First Name");
+            frmvalidator.addValidation("txt_MobileNum", "req", "Please Enter Mobile");*/
+            frmvalidator.addValidation("tx_tSeverity", "dontselect=000", "Please Select Nationality.");
+</script>
+        </div>
+ </body>
+ </html>

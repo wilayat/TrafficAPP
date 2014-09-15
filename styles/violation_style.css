@@ -1,0 +1,262 @@
+﻿ body {
+	margin: 0;
+	padding: 0;
+	direction:rtl;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 348px;
+	 height: 595px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #mainlogo 
+{ 
+	 left: 133px; 
+	 top: 26px; 
+	 position: absolute; 
+	 width: 82px;
+	 height: 80px;
+	 z-index:1;
+} 
+
+ #heading 
+{ 
+	 left: 101px; 
+	 top: 104px; 
+	 position: absolute; 
+	 width: 146px;
+	 height: 42px;
+	 z-index:2;
+} 
+
+ #checkboxes 
+{ 
+	 left: 157px; 
+	 top: 523px; 
+	 position: absolute; 
+	 width: 171px;
+	 height: 38px;
+	 z-index:3;
+} 
+
+ #submitbutton 
+{ 
+	 left: 20px; 
+	 top: 512px; 
+	 position: absolute; 
+	 width: 72px;
+	 height: 72px;
+	 z-index:4;
+} 
+
+ #btnarabic 
+{ 
+	 left: 51px; 
+	 top: 18px; 
+	 position: absolute; 
+	 width: 29px;
+	 height: 28px;
+	 z-index:5;
+} 
+
+ #btnenglish 
+{ 
+	 left: 20px; 
+	 top: 18px; 
+	 position: absolute; 
+	 width: 29px;
+	 height: 28px;
+	 z-index:6;
+} 
+
+ #txtDetails 
+{ 
+	 left: 20px; 
+	 top: 366px; 
+	 position: absolute; 
+	 width: 308px;
+	 height: 129px;
+	 z-index:7;
+	 background:url("../images/txtDetails.png") no-repeat;
+	  text-align:center;	 
+	 padding-top:12px;
+} 
+
+ #btnback 
+{ 
+	 left: 294px; 
+	 top: 18px; 
+	 position: absolute; 
+	 width: 28px;
+	 height: 20px;
+	 z-index:8;
+} 
+
+ #txtSeverity 
+{ 
+	 left: 20px; 
+	 top: 312px; 
+	 position: absolute; 
+	 width: 308px;
+	 height: 47px;
+	 z-index:9;
+	 background:url("../images/txtSeverity.png") no-repeat;
+	  text-align:center;	 
+	 padding-top:12px;
+} 
+
+ #txtLat 
+{ 
+	 left: 20px; 
+	 top: 269px; 
+	 position: absolute; 
+	 width: 153px;
+	 height: 46px;
+	 z-index:10;
+	 background:url("../images/txtLat.png") no-repeat;
+	  text-align:center;	 
+	 padding-top:3px;
+} 
+
+ #txtLang 
+{ 
+	 left: 175px; 
+	 top: 260px; 
+	 position: absolute; 
+	 width: 153px;
+	 height: 46px;
+	 z-index:11;
+	 background:url("../images/txtLang.png") no-repeat;
+	  text-align:center;	 
+	 padding-top:12px;
+} 
+
+ #txtMobileNum 
+{ 
+	 left: 20px; 
+	 top: 208px; 
+	 position: absolute; 
+	 width: 308px;
+	 height: 46px;
+	 z-index:12;
+	 background:url("../images/txtMobileNum.png") no-repeat;
+	  text-align:center;	 
+	 padding-top:12px;
+} 
+
+ #txtName 
+{ 
+	 left: 20px; 
+	 top: 155px; 
+	 position: absolute; 
+	 width: 308px;
+	 height: 46px;
+	 z-index:13;
+	 background:url("../images/txtName.png") no-repeat;
+	 text-align:center;	 
+	 padding-top:12px;
+} 
+.textbox
+{
+    padding: 3px 3px 3px 3px;
+    border-bottom:transparent;
+    background-color: transparent;
+    font-size:14px;
+    color:White;   
+    vertical-align:middle;
+    border-left-style: none;
+    border-left-color: transparent;
+    border-right-style: none;
+    border-right-color: transparent;
+    border-top-style: none;
+    border-top-color: transparent;
+    width: 250px;
+    margin-right:40px;
+}
+.textarea
+{
+    padding: 3px 3px 3px 3px;
+    border:transparent;
+    background-color: transparent;
+    font-size:14px;
+    color:White;   
+    vertical-align:middle;
+    border-left-style: none;
+    border-left-color: transparent;
+    border-right-style: none;
+    border-right-color: transparent;
+    border-top-style: none;
+    border-top-color: transparent;
+   width:250px;
+   height:105px;
+   float:left;
+   margin-left:5px;
+}
+.txtlat_lag
+{
+    width:75px;
+    margin-right:25px;
+}
+input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; top:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label.clr {
+							padding-left:20px;
+							height:15px; 
+							display:inline-block;
+							line-height:15px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:15px;
+							vertical-align:middle;
+							cursor:pointer;
+color:Green;
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
+							background-position: 0 -15px;
+						}
+						label.css-label {
+				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_0e837174b6ad05e16b0065be6ecc48aa.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			.myForm select {
+		border: 0 !important;  /*Removes border*/
+		-webkit-appearance: none;  /*Removes default chrome and safari style*/
+		-moz-appearance: none; /* Removes Default Firefox style*/
+		background-color: transparent;
+		width: 100px; /*Width of select dropdown to give space for arrow image*/
+		text-indent: 0.01px; /* Removes default arrow from firefox*/
+		text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+		color: #FFF;
+		border-radius: 5px;
+		box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+		width:240px;
+		margin-right:55px;
+		padding:2px;
+		padding-right:15px;
+	}
+	.S_option
+	{
+	    background-color:Green;
+	}
+	.myForm select.balck {
+		background-color: #000;
+	}
+	.myForm select.option3 {
+		border-radius: 10px 0;
+	}

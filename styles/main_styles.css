@@ -1,0 +1,177 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+ 
+ #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 348px;
+	 height: 595px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #Background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 348px;
+	 height: 595px;
+	 z-index:1;
+} 
+
+ #Settings 
+{ 
+	 left: 189px; 
+	 top: 442px; 
+	 position: absolute; 
+	 width: 84px;
+	 height: 82px;
+	 z-index:2;
+} 
+
+ #HaletAlbala339 
+{ 
+	 left: 83px; 
+	 top: 442px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 83px;
+	 z-index:3;
+} 
+
+ #layer_999 
+{ 
+	 left: 236px; 
+	 top: 339px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 83px;
+	 z-index:4;
+} 
+
+ #layer_997 
+{ 
+	 left: 134px; 
+	 top: 341px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 82px;
+	 z-index:5;
+} 
+
+ #layer_998 
+{ 
+	 left: 31px; 
+	 top: 341px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 83px;
+	 z-index:6;
+} 
+
+ #layer_996 
+{ 
+	 left: 236px; 
+	 top: 236px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 84px;
+	 z-index:7;
+} 
+
+ #Najim 
+{ 
+	 left: 134px; 
+	 top: 238px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 82px;
+	 z-index:8;
+} 
+
+ #layer_993 
+{ 
+	 left: 31px; 
+	 top: 238px; 
+	 position: absolute; 
+	 width: 85px;
+	 height: 83px;
+	 z-index:9;
+} 
+
+ #Button 
+{ 
+	 left: 281px; 
+	 top: 553px; 
+	 position: absolute; 
+	 width: 38px;
+	 height: 34px;
+	 z-index:10;
+} 
+
+ #EffectRight 
+{ 
+	 left: 328px; 
+	 top: 62px; 
+	 position: absolute; 
+	 width: 11px;
+	 height: 515px;
+	 z-index:11;
+} 
+
+ #EffectLeft 
+{ 
+	 left: 11px; 
+	 top: 63px; 
+	 position: absolute; 
+	 width: 11px;
+	 height: 514px;
+	 z-index:12;
+} 
+
+ #Bala339e 
+{ 
+	 left: 83px; 
+	 top: 107px; 
+	 position: absolute; 
+	 width: 185px;
+	 height: 64px;
+	 z-index:13;
+} 
+
+ #LOGO 
+{ 
+	 left: 153px; 
+	 top: 26px; 
+	 position: absolute; 
+	 width: 174px;
+	 height: 25px;
+	 z-index:14;
+} 
+
+ #AButton 
+{ 
+	 left: 58px; 
+	 top: 15px; 
+	 position: absolute; 
+	 width: 31px;
+	 height: 35px;
+	 z-index:15;
+} 
+
+ #EButton 
+{ 
+	 left: 23px; 
+	 top: 18px; 
+	 position: absolute; 
+	 width: 36px;
+	 height: 32px;
+	 z-index:16;
+} 
